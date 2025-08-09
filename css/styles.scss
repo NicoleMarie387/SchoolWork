@@ -73,4 +73,28 @@ header {
     background-color: $color-mid;
     color: #fff;
   }
+  .review-section {
+    background: #fffbe6;
+    border: 2px solid #17A2B8;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
+
+.campsite-btn {
+    background-color: #17A2B8;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.campsite-btn:hover,
+.campsite-btn:focus {
+    background-color: #138496;
+    color: #fff;
+}
+}
+@import 'review-section';

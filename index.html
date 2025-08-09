@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
     <link rel="stylesheet" href="css/styles.scss" />
     <title>Nucamp: A Better Way To Camp - Custom</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
@@ -44,26 +45,25 @@
         footer a {
             color: #00b894;
         }
-       .img-emphasis {
-    border: 4px solid #38b6ff;           /* Thicker, blue border */
-    border-radius: 1rem;                 /* Rounded corners */
-    padding: 4px;                        /* Space for border */
-    background: #fff;                    /* White background for pop */
-}
-.carousel-img-emphasis,
-.carousel-img-emphasis:focus,
-.carousel-img-emphasis:active {
-    outline: none !important;
-    box-shadow: none !important;
-    border: 10px solid #38b6ff !important;
-}
-
-.carousel-inner img:focus,
-.carousel-inner img:active {
-    outline: none !important;
-    box-shadow: none !important;
-    border: 10px solid #38b6ff !important;
-}
+        .img-emphasis {
+            border: 4px solid #38b6ff;
+            border-radius: 1rem;
+            padding: 4px;
+            background: #fff;
+        }
+        .carousel-img-emphasis,
+        .carousel-img-emphasis:focus,
+        .carousel-img-emphasis:active {
+            outline: none !important;
+            box-shadow: none !important;
+            border: 10px solid #38b6ff !important;
+        }
+        .carousel-inner img:focus,
+        .carousel-inner img:active {
+            outline: none !important;
+            box-shadow: none !important;
+            border: 10px solid #38b6ff !important;
+        }
     </style>
 </head>
 <body>
@@ -92,27 +92,27 @@
     </header>
 
     <!-- navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-info sticky-top mb-4">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nucampNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa-solid fa-info fa-lg"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-list fa-lg"></i> Sites</a></li>
-                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
-            </ul>
-            <span class="navbar-text ms-auto">
-                <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <i class="fa-solid fa-right-to-bracket"></i> Login
-                </a>
-            </span>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info sticky-top mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa-solid fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text ms-auto">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                </span>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- login modal -->
     <div class="modal fade" id="loginModal">
@@ -271,21 +271,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Feature Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFeature">
-                    <button class="accordion-button collapsed d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeature" aria-expanded="false" aria-controls="collapseFeature">
-                        <img src="img/react-lake-thumb.jpg" alt="React Lake" style="height:64px; width: 64px;" class="rounded-4 img-thumbnail img-emphasis" />
-                        <span>Featured Campsites</span>
-                    </button>
-                </h2>
-                <div id="collapseFeature" class="accordion-collapse collapse" aria-labelledby="headingFeature" data-bs-parent="#mainAccordion">
-                    <div class="accordion-body">
-                        <h3>React Lake Campground</h3>
-                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                    </div>
-                </div>
-            </div>
             <!-- Partner Section -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingPartner">
@@ -302,6 +287,39 @@
                 </div>
             </div>
         </div>
+<!-- Review Section OUTSIDE Accordion -->
+<div class="row justify-content-center my-5">
+    <div class="col-12 col-md-10 col-lg-8">
+        <div class="card review-section">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 text-md-end mb-3 mb-md-0 d-flex align-items-center justify-content-end">
+                        <h2 class="text-sm-end mb-0" style="font-family: 'Lobster', cursive; color: #17A2B8;">What Are Happy Campers Saying?</h2>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-3 mb-md-0">
+                        <img src="img/happy-campers.jpg" class="img-thumbnail img-fluid mb-3" alt="Happy Campers" style="max-width: 160px;" />
+                        <div class="d-flex justify-content-center mt-2">
+                            <button 
+                                class="campsite-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reserveModal">
+                                Reserve Campsite
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+                        <h3 style="color: #5637dd;">So Worth It!</h3>
+                        <p style="font-size: 1.1rem;">
+                            "We had a blast as we embarked on a wild adventure amidst nature's embrace, where s'mores and laughter under starlit skies became our daily ritual, creating memories that will last us forever."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End Review Section -->
+
     </main>
     <!-- footer -->
     <footer class="pt-4 mt-5">
@@ -330,7 +348,8 @@
             </div>
         </div>
     </footer>
-<!-- Bootstrap JavaScript plugins -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Bootstrap JavaScript plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB8c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-1CmrxMRARb6aN6R9A4c8c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5" crossorigin="anonymous"></script>
 </body>
 </html>
